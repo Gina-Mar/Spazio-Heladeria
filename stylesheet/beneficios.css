@@ -1,0 +1,283 @@
+@import url(beneficios.css);
+@font-face {
+    font-family: Createland;
+    src: url('./Fonts/Createland');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+    height: 307px;
+    background-color: rgba(24, 13, 85, 1);
+    background-image: url(../Imagenes/fondo/Fondo\ menu.png);
+}
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    width: 1120px;
+    height: 212px;
+    /* background-color: aqua; */
+}
+.fila1{
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    height: 125px;
+}
+.fila2{
+    display: flex;
+    column-gap: 19px;
+    width: 1120px;
+    height: 61px;
+}
+.button{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    height: 61px;
+    background-color: rgba(131, 116, 224, 1);
+    border: none;
+    padding: 0px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: rgba(246, 178, 216, 1);
+    color: rgba(96, 95, 95, 1);
+}
+.button:focus{
+    background-color:rgba(179, 160, 245, 1);
+    color: black;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 21px;
+}
+/* .busqueda:hover, .registro:hover, .compra:hover{
+    background-color: rgba(246, 178, 216, 1);
+}
+.busqueda, .registro, .compra{
+    display: flex;
+    align-items: center;
+    height: 61px;
+    padding: 20px 42px ;
+    border-radius: 50px;
+    background-color: rgba(131, 116, 224, 1);
+
+} */
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 90px;
+    padding-top: 60px;
+    width: 1366px;
+    height: 3400px;
+    background-color: rgba(24, 13, 85, 1);
+    background-image: url(../Imagenes/fondo/textura.png);
+    background-repeat: no-repeat;
+}
+.fruta{
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+    width: 1120px;
+    height: 2930px;
+}
+.card1{
+    position: relative;
+    overflow: hidden;
+    width: 1120px;
+    height: 402px;
+    /* background-color: aqua; */
+}
+.titulo{
+    color: rgba(197, 240, 244, 1);
+    font-family: Createland;
+    font-size: 48px;
+    text-align: center;
+    line-height: 40px;
+}
+.imagen, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6 {
+    width: 450px;
+    height: px;
+    position: absolute;
+    left: 0;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+.oculto, .oculto2, .oculto3, .oculto4, .oculto5, .oculto6 {
+    display: none;
+    width: 740px;
+    height: 360px;
+    background-color: rgba(167, 218, 232, 1);
+    color: white;
+}
+.imagen.moved, .imagen2.moved, .imagen3.moved, .imagen4.moved, .imagen5.moved, .imagen6.moved  {
+    transform: translateX(calc(100vw - 1250px)); /* 100vw is the full width of the viewport */
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 148px;
+    width: 1366px;
+    height: 350px;
+    /* background-color: rgba(24, 13, 85, 1); */
+    background-image: url(../Imagenes/fondo/Fondo\ footer.png);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+    height: 93px;
+}
+.face{
+    display: flex;
+    width: 302px;
+    font-size: 30px;
+    column-gap: 20px;
+    color: rgba(197, 240, 244, 1);
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 575px) {
+    .contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 80px;
+        width: 575px;
+        height: 3600px;
+        background-color: rgba(24, 13, 85, 1);
+        background-image: url(../Imagenes/fondo/fondo\ textura\ reponsive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        z-index: 1;
+    }
+    .encabezado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 575px;
+        height: 120px;
+        background-color: rgba(24, 13, 85, 1);
+        background-image: url(../Imagenes/fondo/fondo\ menu\ responsive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .botones{
+        display: none;
+        
+    }
+    .fila1{
+        display: none;
+        
+    }
+    .fila2{
+        display: none;
+        
+    }
+    
+    .fruta{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        width: 575px;
+        height: 3500px;
+    }
+    .card1{
+        
+        position: relative;
+        overflow: hidden;
+        width: 575px;
+        height: 500px;
+        /* background-color: aqua; */
+    }
+    .imagen{
+        width: 442px;
+        height: 350px;
+    }
+    .titulo{
+        color: rgba(197, 240, 244, 1);
+        font-family: Createland;
+        font-size: 36px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+
+    .oculto, .oculto2, .oculto3, .oculto4, .oculto5, .oculto6 {
+        display: none;
+        width: 550px;
+        height: 360px;
+        background-color: rgba(167, 218, 232, 1);
+        color: white;
+    }
+    .textoOculto2{
+        width: 550px;
+        height: 360px;
+        background-color: rgba(167, 218, 232, 1);
+        color: white;
+    }
+
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        padding-top: 55px;
+        width: 575px;
+        height: 150px;
+        /* background-color: rgba(24, 13, 85, 1); */
+        background-image: url(../Imagenes/fondo/fondo\ footer\ responsive.png);
+        background-repeat: no-repeat;
+        margin: 0;
+        background-size: cover;
+    }
+    .logof{
+        width: 150px;
+        height: 36px;
+    }
+    .redes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 535px;
+        height: 60px;
+    }
+    .face{
+        display: flex;
+        width: 48px;
+        font-size: 30px;
+        column-gap: 20px;
+        color: rgba(197, 240, 244, 1);
+        text-decoration: none;
+        margin: 0 40px;
+    }
+    .text{
+        display: none;
+    }
+
+}

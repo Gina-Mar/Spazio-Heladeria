@@ -1,0 +1,484 @@
+@import url(helados.css);
+@font-face {
+    font-family: Createland;
+    src: url('./Fonts/Createland');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+    height: 307px;
+    background-color: rgba(24, 13, 85, 1);
+    background-image: url(../Imagenes/fondo/Fondo\ menu.png);
+}
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    width: 1120px;
+    height: 212px;
+    /* background-color: aqua; */
+}
+.fila1{
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    height: 125px;
+}
+.fila2{
+    display: flex;
+    column-gap: 19px;
+    width: 1120px;
+    height: 61px;
+}
+.button{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    height: 61px;
+    background-color: rgba(131, 116, 224, 1);
+    border: none;
+    padding: 0px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: rgba(246, 178, 216, 1);
+    color: rgba(96, 95, 95, 1);
+}
+.button:focus{
+    background-color:rgba(179, 160, 245, 1);
+    color: black;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 21px;
+}
+/* .busqueda:hover, .registro:hover, .comprar:hover{
+    background-color: rgba(246, 178, 216, 1);
+}
+.busqueda, .registro, .comprar{
+    display: flex;
+    align-items: center;
+    height: 61px;
+    padding: 20px 42px ;
+    border-radius: 50px;
+    background-color: rgba(131, 116, 224, 1);
+} */
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 90px;
+    width: 1366px;
+    height: 4070px;
+    background-color: rgba(24, 13, 85, 1);
+    background-image: url(../Imagenes/fondo/textura.png);
+    background-repeat: no-repeat;
+    padding-top: 30px;
+}
+.sub{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    column-gap: 20px;
+    width: 1120px;
+    height: 62px;
+    /* background-color: aqua; */
+    position: sticky;
+    top: 10px;
+}
+.boton2{
+    padding: 20px 76px;
+    width: 265px;
+    height: 62px;
+    background-color: rgba(179, 160, 245, 1);
+    color: rgba(24, 13, 85, 1);
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.porciones{
+    width: 1120px;
+    height: 994px; 
+    background-color: rgb(37, 39, 138); 
+}
+.paletas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    width: 1120px;
+    height: 947px;  
+    /* background-color: rgb(154, 189, 1);  */
+}
+.tittle{
+    color: rgba(197, 240, 244, 1);
+    font-family: Createland;
+    font-size: 48px;
+    text-align: center;
+    line-height: 40px;
+}
+.sabores{
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    height: 354px;
+    /* background-color: aqua; */
+}
+.maracuya{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 455px;
+    height: 354px;
+}
+.titulo{
+    color: rgba(197, 240, 244, 1);
+    font-family: Createland;
+    font-size: 48px;
+    text-align: center;
+    line-height: 40px;
+}
+.descripcion{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+}
+.precio{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 30px;
+}
+.compra{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    /* width: 193px; */
+    height: 49px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 44px ;
+    border-radius: 50px;
+    background-color: rgba(131, 116, 224, 1);
+}
+.torta{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    width: 1120px;
+    height: 746px;  
+    /* background-color: rgb(206, 105, 10);  */
+}
+.tortasec{
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    height: 646px; 
+}
+.selva{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 646px;
+}
+.pizza{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    width: 1120px;
+    height: 778px;   
+    /* background-color: rgb(209, 20, 67);  */
+}
+.conos{
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    height: 641px; 
+}
+.pizzasab{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 641px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 148px;
+    width: 1366px;
+    height: 350px;
+    /* background-color: rgba(24, 13, 85, 1); */
+    background-image: url(../Imagenes/fondo/Fondo\ footer.png);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+    height: 93px;
+}
+.face{
+    display: flex;
+    width: 302px;
+    font-size: 30px;
+    column-gap: 20px;
+    color: rgba(197, 240, 244, 1);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 575px) {
+    .contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 90px;
+        width: 575px;
+        height: 6000px;
+        background-color: rgba(24, 13, 85, 1);
+        background-image: url(../Imagenes/fondo/fondo\ textura\ reponsive.png);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        padding-top: 30px;
+    }
+
+    .encabezado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 575px;
+        height: 120px;
+        background-color: rgba(24, 13, 85, 1);
+        background-image: url(../Imagenes/fondo/fondo\ menu\ responsive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .botones{
+        display: none;
+        
+    }
+    .fila1{
+        display: none;
+        
+    }
+    .fila2{
+        display: none;
+        
+    }
+    .hero{
+        width: 575px;
+        height: 622px;
+        background-color: rgba(24, 13, 85, 1);
+    }
+
+    .sub{
+        display: none
+    }
+
+    .porciones{
+        width: 575px;
+        height: 1275px; 
+        background-color: rgb(37, 39, 138); 
+    }
+    .paletas{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        width: 575px;
+        height: 1520px;  
+        /* background-color: rgb(154, 189, 1);  */
+    }
+    .tittle{
+        color: rgba(197, 240, 244, 1);
+        font-family: Createland;
+        font-size: 36px;
+        text-align: center;
+        height: 30px;
+
+    }
+    .sabores{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        width: 550px;
+        height: 690px;
+        /* background-color: aqua; */
+    }
+    .maracuya{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 455px;
+        height: 325px;
+    }
+    .titulo{
+        color: rgba(197, 240, 244, 1);
+        font-family: Createland;
+        font-size: 36px;
+        text-align: center;
+      
+    }
+    .descripcion{
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 12px;
+        text-align: center;
+     
+    }
+    .precio{
+        color: white;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 30px;
+    }
+    .compra{
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        /* width: 193px; */
+        height: 38px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px 20px ;
+        border-radius: 50px;
+        background-color: rgba(131, 116, 224, 1);
+    }
+
+    .torta{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        width: 575px;
+        height: 1500px;  
+        /* background-color: rgb(206, 105, 10);  */
+    }
+    .tortasec{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        width: 575px;
+        height: 1200px; 
+    }
+    .pastel{
+        width: 500px;
+        height: 400px;
+    }
+    .selva{
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        width: 550px;
+        height: 570px;
+    }
+
+    .pizza{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        width: 575px;
+        height: 2200px;   
+        /* background-color: rgb(209, 20, 67);  */
+    }
+    .conos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        width: 575px;
+        height: 1800px; 
+    }
+    .pizzasab{
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+        height: 560px;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        padding-top: 55px;
+        width: 575px;
+        height: 150px;
+        /* background-color: rgba(24, 13, 85, 1); */
+        background-image: url(../Imagenes/fondo/fondo\ footer\ responsive.png);
+        background-repeat: no-repeat;
+        margin: 0;
+        background-size: cover;
+    }
+    .logof{
+        width: 150px;
+        height: 36px;
+    }
+    .redes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 535px;
+        height: 60px;
+    }
+    .face{
+        display: flex;
+        width: 48px;
+        font-size: 30px;
+        column-gap: 20px;
+        color: rgba(197, 240, 244, 1);
+        text-decoration: none;
+        margin: 0 40px;
+    }
+    .text{
+        display: none;
+    }
+
+}

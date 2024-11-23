@@ -70,5 +70,3 @@ document.getElementById('mostrarTextoBtn5').addEventListener('click', function()
 document.getElementById('mostrarTextoBtn6').addEventListener('click', function() {
     document.getElementById('textoOculto6').classList.toggle('oculto6');
 });
-
-

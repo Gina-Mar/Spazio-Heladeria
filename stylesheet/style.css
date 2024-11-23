@@ -15,7 +15,7 @@
     align-items: center;
     width: 1366px;
     height: 307px;
-    background-color: rgba(24, 13, 85, 1);
+    /* background-color: rgba(24, 13, 85, 1); */
     background-image: url(../Imagenes/fondo/Fondo\ menu.png);
 }
 .botones{
@@ -81,9 +81,63 @@
     background-color: rgba(131, 116, 224, 1);
 } */
 .hero{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
     width: 1366px;
     height: 670px;
-    background-color: rgba(24, 13, 85, 1);
+    background-color: #653DE3;
+    padding: 0;
+    margin-top: -60px;
+}
+.conte{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1366px;
+    height: 670px;
+    z-index: 2;
+    margin-top: -612px;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.helado2{
+    z-index: 2;
+}
+.titulop{
+    text-align: start;
+    font-family: Createland;
+    font-size: 105px;
+    color: #FED3FF;
+}
+.titulo2{
+    text-align: start;
+    font-family: Createland;
+    font-size: 80px;
+    color: #6438E5;
+}
+.textop{
+    margin-top: 90px;
+    color: #6438E5;
+    font-size: 48px;
+    font-family: Berlin Sans FB;
+}
+.fondop{
+    width: 1320px;
+    height: 309px;
+    z-index: 0;
+    background-image: url(../Imagenes/Promociones/Promociones\ 2.png);
+        background-size: cover;
+}
+.fondop2{
+    width: 1320px;
+    height: 478px;
+    z-index: 1;
+    margin-top: -118px;
+    background-image: url(../Imagenes/Promociones/Promociones\ 2_1.png);
+        background-size: cover;
 }
 
 .contenido{
@@ -98,6 +152,7 @@
     background-image: url(../Imagenes/fondo/Fondo\ porcion.png);
     background-repeat: no-repeat;
     padding-top: 20px;
+    margin-top: -60px;
    
 }
 .porciones{
@@ -165,7 +220,7 @@
     flex-direction: column;
     row-gap: 60px;
     width: 1366px;
-    height: 4135px;
+    height: 4015px;
     background-color: rgba(24, 13, 85, 1);
     background-image: url(../Imagenes/fondo/textura.png);
     background-repeat: no-repeat;
@@ -182,6 +237,7 @@
     /* line-height: 50px; */
 }
 .sabores{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,13 +246,72 @@
     /* background-color: beige; */
 }
 .card2{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 360px;
     height: 480px;
     /* background-color: aqua; */
 }
-.cono{
-    transition: transform 1s ease-in-out;
+
+.cono {
+    width: 360px;
+    height: 480px;
+    animation: rotateAndFade 5s infinite;
+}
+
+.overlay {
+    position: absolute;
+    
+    width: 306px;
+    height: 244px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: showOverlay 5s infinite;
+}
+
+.overlay-image {
+    width: 306px;
+    height: 244px;
+    object-fit: contain;
+}
+
+.overlay-text {
+    position: absolute;
+    color: rgba(197, 240, 244, 1);
+    font-size: 48px;
+    font-family: Createland;
+    text-align: center;
+    line-height: 1.2;
+}
+
+@keyframes rotateAndFade {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes showOverlay {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.buscar2{
+    width: 1250px;
+    height: 46px;
+    /* background-color: aqua; */
+    color: rgba(197, 240, 244, 1);
+    font-family: Createland;
+    font-size: 48px;
+    /* line-height: 50px; */
 }
 .paleta{
     display: flex;
@@ -207,7 +322,11 @@
     /* background-color: blue; */
 }
 .card3{
-    
+    width: 576px;
+    height: 190px;
+    /* background-color: aqua; */
+}
+.card33{
     width: 576px;
     height: 190px;
     /* background-color: aqua; */
@@ -217,6 +336,7 @@
     transition: opacity 1s ease-in-out;
     margin-top: 10px;
     text-align: right;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
     color: white;
   }
@@ -304,7 +424,20 @@
     border-radius: 50px;
     background-color: rgba(179, 160, 245, 1);
 }
+.card5{
+    width: 360px;
+    height: 690px;
+    border-radius: 50px;
+    background-color: rgba(179, 160, 245, 1);
+}
 .mision{
+    width: 290px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mision2{
     width: 290px;
     margin-left: 30px;
     margin-top: 20px;
@@ -348,7 +481,7 @@
         flex-direction: column;
         row-gap: 80px;
         width: 575px;
-        height: 4500px;
+        height: 5190px;
         background-color: rgba(24, 13, 85, 1);
         background-image: url(../Imagenes/fondo/fondo\ textura\ reponsive.png);
         background-repeat: no-repeat;
@@ -362,15 +495,16 @@
         align-items: center;
         width: 575px;
         height: 120px;
-        background-color: rgba(24, 13, 85, 1);
         background-image: url(../Imagenes/fondo/fondo\ menu\ responsive.png);
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: 4;
     }
     .botones{
         display: none;
         
     }
+    
     .fila1{
         display: none;
         
@@ -380,21 +514,122 @@
         
     }
     .hero{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-end;
         width: 575px;
-        height: 622px;
-        background-color: rgba(24, 13, 85, 1);
+        height: 800px;
+        background-color: #653DE3;
+        padding: 0;
+        margin: 0;
+        margin-top: -100px;
+        z-index: 3;
+    }
+    .conte{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 575px;
+        height: 800px;
+        z-index: 2;
+        margin-top: -812px;
+        padding: 0px;
+    }
+    .helado1{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 575px;
+    }
+    
+    .helado2{
+        margin-left: 300px;
+        margin-top: -150px;
+        width: 288px;
+        height: 473px;
+        z-index: 2;
+    }
+    .titulop{
+        width: 575;
+        text-align: center;
+        font-family: Createland;
+        font-size: 62px;
+        text-align: center;
+        color: #FED3FF;
+    }
+    .titulo2{
+        width: 165px;
+        text-align: center;
+        font-family: Createland;
+        font-size: 35px;
+        color: #6438E5;
+    }
+    .textop{
+        width: 575;
+        color: #6438E5;
+        font-size: 29px;
+        text-align: center;
+        font-family: Berlin Sans FB;
+        margin-top: 250;
+    }
+    .fondop{
+        width: 575px;
+        height: 274px;
+        z-index: 0;
+        background-image: url(../Imagenes/Promociones/Promociones\ 2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0;
+        margin: 0;
+    }
+    .fondop2{
+        width: 575px;
+        height: 810px;
+        z-index: 1;
+        margin-top: -210px;
+        background-image: url(../Imagenes/Promociones/Promociones\ 2_1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .contenido{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        column-gap: 20px;
         width: 575px;
         height: 542px;
         /* background-color: rgba(24, 13, 85, 1); */
         background-image: url(../Imagenes/fondo/Vector\ \(5\).png);
         background-repeat: no-repeat;
+        padding: 0;
+        padding-top: 10px;
+        margin-top: -10px;
+      
+    }
+    .buscar{
+        width: 575px;
+        height: 30px;
+        /* background-color: aqua; */
+        color: rgba(131, 116, 224, 1);
+        font-family: Createland;
+        font-size: 36px;
+        text-align: center;
+        /* line-height: 50px; */
+    }
+    .porciones{
+        display: flex;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        width: 575px;
+        height: 300px;
+        /* background-color: rgba(24, 13, 85, 1); */
+        margin-top: -100px;
     }
     .card1{
         display: flex;
@@ -446,50 +681,104 @@
         width: 150px;
         height: 150px;
     }
+    .desplazador{
+        width: 20px;
+        height: 20px;
+    }
 
-
-    .buscar{
+    .buscar2{
         width: 575px;
         height: 30px;
         /* background-color: aqua; */
         color: rgba(131, 116, 224, 1);
-        text-align: center;
         font-family: Createland;
         font-size: 36px;
-        line-height: 50px;
+        text-align: center;
+        /* line-height: 50px; */
     }
     .sabores{
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 535px;
         height: 200px;
+        margin-top: -50px;
         /* background-color: beige; */
     }
-    .conos{
-        width: 150px;
-        height: 200px;
-    }
     .card2{
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 150px;
         height: 200px;
         /* background-color: aqua; */
     }
+    .cono {
+        width: 150px;
+        height: 200px;
+        animation: rotateAndFade 5s infinite;
+    }
+    
+    .overlay {
+        position: absolute;
+        width: 140px;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation: showOverlay 5s infinite;
+    }
+    
+    .overlay-image {
+        width: 140px;
+        height: 110px;
+        object-fit: contain;
+    }
+    
+    .overlay-text {
+        position: absolute;
+        color: rgba(197, 240, 244, 1);
+        font-size: 24px;
+        font-family: Createland;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    @keyframes rotateAndFade {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(45deg);
+        }
+    }
+    
+    @keyframes showOverlay {
+        0%, 100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+
+
     .paleta{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        row-gap: 50px;
+        row-gap: 100px;
         width: 575px;
-        height: 417px;
+        height: 750px;
         /* background-color: blue; */
     }
     .card3{
         width: 575px;
         height: 190px;
-        
+        padding-right: 75px;
         /* background-color: aqua; */
     }
     .card33{
@@ -503,6 +792,11 @@
         height: 189px;
         /* background-color: aqua; */
     }
+    .helpal2{
+        width: 500px;
+        height: 189px;
+        /* background-color: aqua; */
+    }
 
     .nosotros{
         display: flex;
@@ -511,21 +805,36 @@
         flex-direction: column;
         row-gap: 40px;
         width: 575px;
-        height: 1676px;
+        height: 2200px;
         /* background-color: aqua; */
     }
     .card4{
         width: 450px;
-        height: 573px;
+        height: 650px;
+        border-radius: 50px;
+        background-color: rgba(179, 160, 245, 1);
+    }
+    .card5{
+        width: 450px;
+        height: 750px;
         border-radius: 50px;
         background-color: rgba(179, 160, 245, 1);
     }
     .mision{
-        width: 290px;
-        margin-left: 30px;
-        margin-top: 20px;
-        font-size: 12px;
+        width: 400px;
+        margin: 30px 30px;
+        font-size: 18px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .mision2{
+        width: 400px;
+        margin: 30px 20px;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .imagenh{
+        width: 450px;
+        height: 450px;
     }
 
 

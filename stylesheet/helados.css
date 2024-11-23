@@ -85,7 +85,7 @@
     flex-direction: column;
     row-gap: 90px;
     width: 1366px;
-    height: 4070px;
+    height: 4200px;
     background-color: rgba(24, 13, 85, 1);
     background-image: url(../Imagenes/fondo/textura.png);
     background-repeat: no-repeat;
@@ -101,6 +101,7 @@
     /* background-color: aqua; */
     position: sticky;
     top: 10px;
+    z-index: 15;
 }
 .boton2{
     padding: 20px 76px;
@@ -117,7 +118,210 @@
 .porciones{
     width: 1120px;
     height: 994px; 
-    background-color: rgb(37, 39, 138); 
+}
+.porcion{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.sab{
+    display: flex;
+    justify-content: space-around;
+    width: 550px;
+    height: 192px;
+    /* background-color: aqua; */
+}
+.sab2{
+    display: flex;
+    justify-content: space-around;
+    width: 550px;
+    height: 192px;
+    /* background-color: aqua; */
+    margin-top: -100px;
+}
+.sab3{
+    display: flex;
+    justify-content: space-around;
+    width: 550px;
+    height: 192px;
+    /* background-color: aqua; */
+    margin-top: -100px;
+}
+.sab4{
+    display: flex;
+    justify-content: space-around;
+    width: 550px;
+    height: 192px;
+    /* background-color: aqua; */
+    margin-top: -100px;
+}
+.sab5{
+    display: flex;
+    justify-content: space-around;
+    width: 550px;
+    height: 390px;
+    /* background-color: rgba(32, 175, 175, 0.651); */
+    margin-top: -100px;
+}
+.sabor1{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 10;
+}
+.sabor2{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 8;
+    margin-right: -350px;
+}
+.sabor3{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 9;
+    
+}
+.sabor4{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 5;
+    margin-right: -200px;
+}
+.sabor5{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 6;
+    margin-right: -200px;
+}
+.sabor6{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 7;
+    
+}
+.sabor7{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 1;
+    margin-right: -116px;
+}
+.sabor8{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 2;
+    margin-right: -116px;
+}
+.sabor9{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 3;
+    margin-right: -116px;
+}
+.sabor10{
+    width: 192px;
+    height: 192px;
+    /* background-color: aqua; */
+    z-index: 4;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 155px;
+    /* background-color: aliceblue; */
+}
+.titulo2{
+    color: rgba(197, 240, 244, 1);
+    width: 550px;
+    font-family: Createland;
+    font-size: 48px;
+    line-height: 40px;
+}
+.top2{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    width: 550px;
+    height: 485px;
+    /* background-color: aquamarine; */
+}
+.vaso{
+    width: 550px;
+    height: 383px;
+    z-index: 0;
+}
+.izquierda, .derecha{
+    width: 550px;
+    height: 760px;
+}
+.derecha{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.toping{
+    width: 74px;
+    height: 74px;
+}
+.seleccionar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 70px;
+}
+.eleccion{
+    padding-top: 10px;
+    width: 360px;
+    height: 70px;
+    font-family: Createland;
+    font-size: 36px;
+    text-align: center;
+    color: rgba(24, 13, 85, 1);
+    background-color: rgba(167, 218, 232, 1);
+    border-radius: 50px;
+}
+.cerrar{
+    width: 40px;
+    height: 40px;
+}
+.elegir{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+    margin-top: 20px;
+
+}
+.elegiriz, .elegirder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+}
+.compra2{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    /* width: 193px; */
+    width: 193px;
+    height: 49px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 44px ;
+    border-radius: 50px;
+    background-color: rgba(131, 116, 224, 1);
 }
 .paletas{
     display: flex;
@@ -269,7 +473,7 @@
         flex-direction: column;
         row-gap: 90px;
         width: 575px;
-        height: 6000px;
+        height: 7000px;
         background-color: rgba(24, 13, 85, 1);
         background-image: url(../Imagenes/fondo/fondo\ textura\ reponsive.png);
         /* background-repeat: no-repeat; */
@@ -312,8 +516,24 @@
 
     .porciones{
         width: 575px;
-        height: 1275px; 
-        background-color: rgb(37, 39, 138); 
+        height: 1800px; 
+  
+    }
+    
+    .porcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .elegir{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 575px;
+        margin-top: 20px;
     }
     .paletas{
         display: flex;

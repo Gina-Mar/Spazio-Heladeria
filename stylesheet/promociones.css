@@ -95,10 +95,130 @@
     z-index: 1;
 }
 .hero{
+    display: flex;
+    justify-content: center;
     width: 1366px;
     height: 670px;
-    background-color: rgb(132, 123, 184);
+    background-color: #2F51C2;
+    background-image: url(../Imagenes/Promociones/Promociones.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.fondo3{
+    width: 1320px;
+    height: 670px;
+    z-index: 0;
+}
+.hero2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 1366px;
+    height: 670px;
+    background-color: #653DE3;
+    padding: 0;
+}
+.conte{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1366px;
+    height: 670px;
+    z-index: 2;
+    margin-top: -612px;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.helado2{
+    z-index: 2;
+}
+.titulo{
+    text-align: start;
+    font-family: Createland;
+    font-size: 105px;
+    color: #FED3FF;
+}
+.titulo2{
+    text-align: start;
+    font-family: Createland;
+    font-size: 80px;
+    color: #6438E5;
+}
+.textop{
+    margin-top: 90px;
+    color: #6438E5;
+    font-size: 48px;
+    font-family: Berlin Sans FB;
+}
+.fondop{
+    width: 1320px;
+    height: 309px;
+    z-index: 0;
+}
+.fondop2{
+    width: 1320px;
+    height: 478px;
+    z-index: 1;
+    margin-top: -118px;
+}
+.hero3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+    height: 670px;
+    background-color: #F6B2D8;
+    background-image: url(../Imagenes/Promociones/Fondo\ promo3_Promociones\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conte3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1320px;
+    height: 600px;
+    z-index: 2;
+    margin-right: 20px;
+    padding-left: 40px;
+}
+.titulo3{
+    text-align: start;
+    font-family: Createland;
+    font-size: 105px;
+    color: #6438E5;
+    text-align: center;
+    line-height: 1.2;
+}
+.titulo4{
+    text-align: start;
+    font-family: Createland;
+    font-size: 195px;
+    color: #6438E5;
+    text-align: center;
+    line-height: 1.2;
+}
+.texto2{
+    color: #6438E5;
+    font-size: 48px;
+    font-family: Berlin Sans FB;
+    text-align: center;
+    line-height: 1.2;
+}
+.fecha{
+    width: 1366px;
+    margin-top: -20px;
+    color: #6438E5;
+    font-size: 34px;
+    border-color: white;
+    font-family: Berlin Sans FB;
+    text-align: center;
+    line-height: 1.2;
+}
+
 .footer{
     display: flex;
     justify-content: center;

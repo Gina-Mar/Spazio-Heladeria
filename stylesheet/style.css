@@ -504,19 +504,19 @@
         display: flex;
         flex-wrap: wrap;
         row-gap: 0px;
-        width: 535px;
+        width: 500px;
         height: 100px;
     }
     .fila1{
         display: flex;
         justify-content: space-between;
-        width: 535px;
+        width: 500px;
         height: 60px;
     }
     .fila2{
         display: flex;
         column-gap: 10px;
-        width: 535px;
+        width: 500px;
         height: 20px;
     }
     .button{
@@ -589,7 +589,7 @@
     }
     
     .helado2{
-        margin-left: 300px;
+        margin-left: 280px;
         margin-top: -150px;
         width: 288px;
         height: 473px;
